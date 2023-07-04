@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./about.css";
 import ME from "../../assets/second-page-dp.jpg";
 import { FaGraduationCap, FaLaptop } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
-import { BsLinkedin } from "react-icons/bs";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 const About = () => {
+  const [currentDate, setCurrentDate] = useState("");
+
+  useEffect(() => {
+    const date = new Date();
+    setCurrentDate(date.toDateString());
+  }, []);
+
   return (
     <section id="about">
       <h5>01.</h5>
@@ -60,14 +67,19 @@ const About = () => {
               a SaaS startup{" "}
             </a>
             . I am actively looking for a Web Developer or a Software Developer
-            role (as of Jun 22 2023).
+            role (as of {currentDate}).
           </p>
-          <a
-            href="https://www.linkedin.com/in/abbhijeetgavade/"
-            target="__blank"
-          >
-            <BsLinkedin size={40} />
-          </a>
+          <div className="shoutouts">
+            <a
+              href="https://www.linkedin.com/in/abbhijeetgavade/"
+              target="__blank"
+            >
+              <BsLinkedin size={40} />
+            </a>
+            <a href="https://github.com/GitHUBhijeet" target="__blank">
+              <BsGithub size={40} />
+            </a>
+          </div>
           {/* <a href="#contact" className="btn btn-primary">
             Lets Talk
           </a> */}

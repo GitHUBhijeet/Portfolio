@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./footer.css";
 
 const Footer = () => {
+  const [currentDate, setCurrentDate] = useState("");
+
+  useEffect(() => {
+    const date = new Date();
+    setCurrentDate(date.toDateString());
+  }, []);
+
   return (
     <footer>
       <a className="footer__logo">
-        Actively Seeking Opportunities<h5>as of Jun 22 2023</h5>
+        Actively Seeking Opportunities<h5>as of {currentDate}</h5>
       </a>
 
       <ul className="permalinks">

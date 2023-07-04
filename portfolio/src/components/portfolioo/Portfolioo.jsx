@@ -3,23 +3,31 @@ import "./portfolioo.css";
 import IMG1 from "../../assets/portfolio1.png";
 import IMG2 from "../../assets/portfolio2.png";
 import IMG3 from "../../assets/portfolio3.png";
+import IMG4 from "../../assets/portfolio4.png";
 const projects = [
   {
     id: 1,
+    title: "SpaceChat",
+    image: IMG4,
+    github: "https://github.com/GitHUBhijeet/SpaceChat",
+    demo: "https://harrys-space-chat.netlify.app/",
+  },
+  {
+    id: 2,
     title: "Huluverse",
     image: IMG1,
     github: "https://github.com/GitHUBhijeet/Hulu-Clone",
     demo: "https://harrys-hullu-verse.netlify.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Usability",
     image: IMG2,
     github: "https://github.com/GitHUBhijeet/UsabilityHub-Clone",
     demo: "https://harrys-usabilityhub-clone.netlify.app",
   },
   {
-    id: 3,
+    id: 4,
     title: "ThinkPad",
     image: IMG3,
     github: "https://github.com/GitHUBhijeet/ThinkPad",

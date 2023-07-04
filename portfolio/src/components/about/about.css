@@ -66,6 +66,9 @@ p a {
   color: var(--color-primary);
   text-decoration: underline;
 }
+.shoutouts a {
+  margin-right: 10px;
+}
 
 /* Media queries (medium size devices) */
 
