@@ -53,18 +53,18 @@ const About = () => {
             anything that involves writing Code.
           </p>
           <p>
-            I have had the previlage of working at {""}
+            I have had the privilege of working at {""}
             <a href="https://www.tomtom.com" target="__blank">
               a Dutch MNC that specializes in navigation
             </a>
             ,{" "}
             <a href="https://www.tatamotors.com" target="__blank">
               {" "}
-              India's biggest car manufactoring company{" "}
+              India's biggest car manufacturing company{" "}
             </a>{" "}
             and{" "}
             <a href="https://www.xilo.io" target="__blank">
-              a SaaS startup{" "}
+              a SaaS startup
             </a>
             . I am actively looking for a Web Developer or a Software Developer
             role (as of {currentDate}).
