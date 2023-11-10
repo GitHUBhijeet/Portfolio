@@ -11,9 +11,7 @@ const Footer = () => {
 
   return (
     <footer>
-      <a className="footer__logo">
-        Actively Seeking Opportunities<h5>as of {currentDate}</h5>
-      </a>
+      <a className="footer__logo"></a>
 
       <ul className="permalinks">
         <li>

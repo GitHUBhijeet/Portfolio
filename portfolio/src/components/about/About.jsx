@@ -66,8 +66,6 @@ const About = () => {
             <a href="https://www.xilo.io" target="__blank">
               a SaaS startup
             </a>
-            . I am actively looking for a Web Developer or a Software Developer
-            role (as of {currentDate}).
           </p>
           <div className="shoutouts">
             <a
