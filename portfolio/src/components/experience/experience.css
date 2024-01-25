@@ -1,11 +1,15 @@
 .experience__container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
 }
 .experience__container > div {
   background: var(--color-bg-variant);
-  padding: 2.4rem 5rem;
+  /* padding: 2.4rem 5rem; */
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
@@ -59,5 +63,9 @@
   .experience__container > div {
     width: 100%;
     padding: 2rem 1rem;
+  }
+  #experience h2 {
+    padding: 1rem;
+    margin-bottom: 1rem;
   }
 }

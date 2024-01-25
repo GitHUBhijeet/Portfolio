@@ -27,14 +27,14 @@
 }
 .about__cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 .about__card {
   background: var(--color-bg-variant);
   border: 1px solid transparent;
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 3rem;
   text-align: center;
   transition: var(--transition);
 }
@@ -66,8 +66,12 @@ p a {
   color: var(--color-primary);
   text-decoration: underline;
 }
-.shoutouts a {
-  margin-right: 10px;
+.shoutouts {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 /* Media queries (medium size devices) */
@@ -90,12 +94,12 @@ p a {
 
 @media screen and (max-width: 600px) {
   .about__me {
-    /* width: 65%;
-    margin: 0 auto 3rem; */
+    /* width: 65%; */
+    /* margin: 0 auto 3rem; */
     display: none;
   }
   .about__cards {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
   .about__content {

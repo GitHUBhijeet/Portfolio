@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./about.css";
 import ME from "../../assets/second-page-dp.jpg";
-import { FaGraduationCap, FaLaptop } from "react-icons/fa";
+import { FaCar, FaMusic, FaSchool, FaLaptop } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { BiSolidNavigation } from "react-icons/bi";
+import { MdRealEstateAgent, MdAssistantNavigation } from "react-icons/md";
+import { PiNavigationArrowFill } from "react-icons/pi";
+import { IoSchool } from "react-icons/io5";
 
 const About = () => {
   const [currentDate, setCurrentDate] = useState("");
@@ -25,32 +29,45 @@ const About = () => {
         </div>
         <div className="about__content">
           <div className="about__cards">
-            <article className="about__card">
+            {/* <article className="about__card">
               <FaGraduationCap className="about__icon" />
               <h5>Education</h5>
               <small>MS in CS @NYU</small>
-            </article>
+            </article> */}
+
+            {/* <article className="experience__details">
+              <BsPatchCheckFill className="experience__detials-icon" />
+              <div>
+                <h4>SQL</h4>
+              </div>
+            </article> */}
+
             <article className="about__card">
               <MdWork className="about__icon" />
-              <h5>Internships</h5>
-              <small>@TomTom, Tata Motors, Xilo.io</small>
+              <h5>Work Experience</h5>
+              <small>
+                <FaMusic /> Dottwav <br /> <MdRealEstateAgent /> Xilo.io <br />{" "}
+                <PiNavigationArrowFill />
+                TomTom <br /> <FaCar /> Tata Motors
+              </small>
             </article>
             <article className="about__card">
               <FaLaptop className="about__icon" />
               <h5>Research Fellowships</h5>
               <small>
-                @NTU, Singapore | Teesside Uni, UK | ITU, San Jose, CA
+                <IoSchool /> NTU, Singapore <br /> <IoSchool /> Teesside
+                University, UK <br /> <IoSchool /> ITU, San Jose, CA
               </small>
             </article>
           </div>
           <p>
-            Hello! My name is Abhijeet (Harry) and I have just{" "}
+            Hello! My name is Abhijeet (Harry),
             <span>
-              graduated (May 2023) from NYU with a Master's Degree in Computer
-              Science
+              {" "}
+              an NYU graduate with a Master's Degree in Computer Science
             </span>
             . I have a passion for Coding and Problem Solving. I love working on
-            anything that involves writing Code.
+            anything and everything that involves writing code.
           </p>
           <p>
             I have had the privilege of working at {""}
@@ -60,7 +77,7 @@ const About = () => {
             ,{" "}
             <a href="https://www.tatamotors.com" target="__blank">
               {" "}
-              India's biggest car manufacturing company{" "}
+              India's biggest car manufacturing company
             </a>{" "}
             and{" "}
             <a href="https://www.xilo.io" target="__blank">
